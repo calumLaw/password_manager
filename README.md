@@ -1,39 +1,52 @@
 Password Manager
 
-This is a simple password manager project built with Python's Tkinter library. It generates secure passwords, saves your login credentials for various websites, and allows you to copy generated passwords to your clipboard.
+This is a simple password manager built using the Tkinter library in Python. It generates secure passwords, stores them locally, and allows you to search for saved passwords associated with a specific website.
 
 Features
 
-Password Generation: The manager generates secure random passwords based on a mix of letters, numbers, and symbols. Passwords can be copied to your clipboard automatically.
-Save Credentials: The manager allows you to save your login credentials (Website, Email/Username, Password) for various websites.
-GUI: A clean and straightforward graphical user interface is built using the Tkinter library.
+Password Generation: The application can generate strong, random passwords that include a mix of uppercase and lowercase letters, numbers, and symbols.
+Password Storage: Passwords, along with the associated website and email, are stored locally in a JSON file.
+Password Search: You can retrieve the email and password for a specific website that has been stored in the application.
+
+Dependencies
+
+Tkinter: Used to create the graphical user interface.
+Pyperclip: Used to copy the generated password to the clipboard.
+JSON: Used to store and retrieve the passwords, emails, and websites.
 
 How to Use
+Clone this repository:
 
-Clone this repository to your local machine using git clone https://github.com/your_username/password-manager.git.
+Copy code
+git clone https://github.com/your-username/password-manager.git
+Navigate to the cloned repository:
 
-Install the required packages:
+Copy code
+cd password-manager
+Run the Python script:
 
-Tkinter comes pre-installed with the standard Python distribution, so you don't need to install anything.
-Install the Pyperclip library using pip install pyperclip.
-Run the script using python password_manager.py.
+Copy code
+python3 main.py
 
-Use the GUI to generate and store passwords.
+Note: Make sure you have Python3 and the required libraries installed on your machine.
 
-Code Overview
+Upon launching, the application presents fields for the Website, Email/Username, and Password.
 
-The code includes the following functions:
+To generate a password, click on the "Generate" button. This will automatically populate the password field with a strong, randomly generated password.
 
-generate_password: Generates a secure password, copies it to the clipboard, and inserts it into the password field in the GUI.
+Enter the website and email information, then click on the "Add" button to store the information.
 
-save_data: Saves the entered website, email, and password to a text file. If any of these fields are left empty, it will show a prompt.
+To search for a password, enter the name of the website and click on the "Search" button. If the website's information is stored in the application, a dialog box will appear displaying the email and password. Otherwise, an error message will appear.
 
-The UI has been developed using the Tkinter library. It includes input fields for entering the website, email, and password details. It also includes buttons to generate a password and add the entered details to the text file.
 
-Contributing
+Important Note
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+This is a simple password manager intended for educational purposes. It stores passwords in plaintext in a local file, and therefore should not be used for managing sensitive information.
+
+Contribution
+
+Feel free to contribute to this project by submitting pull requests. Make sure the code is well commented, and the commit messages are meaningful.
 
 License
 
-MIT License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
