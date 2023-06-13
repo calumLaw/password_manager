@@ -17,18 +17,18 @@ JSON: Used to store and retrieve the passwords, emails, and websites.
 How to Use
 Clone this repository:
 
-Copy code
 git clone https://github.com/your-username/password-manager.git
+
 Navigate to the cloned repository:
 
-Copy code
 cd password-manager
+
 Run the Python script:
 
-Copy code
 python3 main.py
 
 Note: Make sure you have Python3 and the required libraries installed on your machine.
+
 
 Upon launching, the application presents fields for the Website, Email/Username, and Password.
 
